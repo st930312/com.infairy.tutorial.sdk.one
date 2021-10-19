@@ -1,0 +1,26 @@
+Bundle-SymbolicName: com.infairy.tutorial.sdk.one
+Bundle-Version: 1.0.${tstamp}
+
+Import-Package: \
+	*;version="!"
+	
+-buildpath: \
+	osgi.core,\
+	osgi.cmpn,\
+	com.infairy.cocina.SDK.Layout,\
+	com.infairy.cocina.SDK.NVR,\
+	com.infairy.cocina.SDK.P2P,\
+	com.infairy.cocina.SDK.debug,\
+	com.infairy.cocina.SDK.device,\
+	com.infairy.cocina.SDK.gene,\
+	com.infairy.cocina.SDK.property,\
+	com.infairy.cocina.SDK.runCondition,\
+	com.infairy.smarthome.tools.jar;version=file
+
+Include-Resource: testFile.txt 
+
+-noee: true
+-sources: false
+Private-Package: com.infairy.tutorial.sdk.one,\
+	com.infairy.smarthome.tools
+Bundle-Activator: com.infairy.tutorial.sdk.one.Main
